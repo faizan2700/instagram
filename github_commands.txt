@@ -1,0 +1,21 @@
+1. Local then Remote 
+run: git init 
+make git ignore file 
+run: git status (check what files will be committed) 
+run: git restore --staged <file> (to unstage any changes that you dont want to commit) 
+run: git add <file> (to add file to staging area that you want to commit) 
+run: git commit -m "message for commiting" (commit changes) 
+
+create remote repo using github dashboard 
+copy url from there 
+run: git remote add origin <url> (add origin url in local repository) 
+run: git remote -v (check if it is correctly added) 
+run: git push origin master (origin is upstream to which you wnat to push, master is branch name, read more about branch and upstream) 
+
+2. Remote then local 
+first make remote repo 
+add file 
+clone repo with url (git clone <url>) 
+add new files make changes 
+check ones if origin is correctly added (git remote -v) 
+git push origin <branch_name> 
